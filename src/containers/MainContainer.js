@@ -5,7 +5,7 @@ import Experience from "./ExperienceContainer"
 import PixelArt from "./PixelArtContainer"
 import Sketches from "./SketchesContainer"
 import Welcome from "./WelcomeContainer"
-import NavBar from "../NavBar"
+// import NavBar from "../NavBar"
 
 const MainContainer = () => {
 
@@ -13,7 +13,7 @@ const MainContainer = () => {
     return(
         <Router>
         <>
-        <NavBar />
+        {/* <NavBar /> */}
         <Switch>
             <Welcome exact path="/" component={Welcome}/>
             <Portfolio path="/portfolio" component={Portfolio} />
