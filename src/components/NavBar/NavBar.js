@@ -26,10 +26,10 @@ const Navbar = ({navbarState, handleNavBar}) => {
           <Brand />
           <NavLinks style={linkAnimation}>
             <a href="/">Home</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Experience</a>
-            <a href="/">Pixel Art</a>
-            <a href="/">Sketches</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/experience">Experience</a>
+            <a href="/pixelart">Pixel Art</a>
+            <a href="/sketches">Sketches</a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu

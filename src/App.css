@@ -19,6 +19,14 @@
                             'embedded-opentype', and 'svg' */
 }
 
+
+
+
+/* Welcome Page */
+/* 
+
+
+*/
 .welcome-text{
   position: absolute;
   left: 5%;
@@ -106,7 +114,7 @@
 .welcome-image{
   position: absolute;
   right: 15%;
-  top: 35%;
+  top: 25%;
   display: inline-block;
   border:3px solid white;
   border-radius: 50%;
@@ -124,3 +132,119 @@
   max-width: 110%;
   max-height:110%;
 }
+
+/* Welcome page end */
+/* 
+
+
+
+*/
+
+
+/* Portfolio page */
+/* 
+
+
+*/
+
+.portfolio-text{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  display: inline-block;
+
+  height: 20%;
+  width: 30%;
+  font-size: 0.4em;
+  font-family: 'spectrum';
+  overflow:scroll;
+  /* margin-left: 20%;
+  margin-top:15%; */
+  color: white;
+  text-align: center;
+}
+.portfolio-display{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  display: inline-block;
+  border: 2px solid white;
+  height: 65%;
+  width: 55%;
+  font-size: 0.3em;
+  font-family: 'spectrum';
+  overflow:scroll;
+  /* margin-left: 20%;
+  margin-top:15%; */
+  color: white;
+  text-align: center;
+}
+
+.portfolio-element{
+  display: inline-block;
+  max-height: 50%;
+
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  border: 2px solid #FFB703;
+}
+
+.portfolio-element img{
+  max-width: 50%;
+  max-height:50%;
+  float: left;
+  margin-right: 5%;
+}
+
+.underlined{
+  text-decoration: underline;
+  color: #FFB703;
+}
+
+@media (max-width: 812px) {
+  .portfolio-text{
+    top: 20%;
+    height: 50%;
+  }
+
+  .portfolio-display{
+    top: 25%;
+  }
+  .portfolio-element{
+    font-size: 0.6em;
+  }
+  .portfolio-element img{
+    max-width: 50%;
+    max-height:100%;
+
+  }
+}
+
+@media (max-width: 376px) {
+  .portfolio-text{
+    top: 15%;
+    height: 50%;
+    width: 90%;
+  }
+
+  .portfolio-display{
+    top: 35%;
+    right: 7%;
+    width: 85%;
+    height: 59%;
+  }
+  .portfolio-element{
+    font-size: 0.3em;
+  }
+  .portfolio-element img{
+    max-width: 50%;
+    max-height:100%;
+
+  }
+}
+
+
+
+
