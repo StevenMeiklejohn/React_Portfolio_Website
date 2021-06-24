@@ -8,10 +8,13 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-grid-gallery": "^0.5.5",
+    "react-photo-gallery": "^8.0.0",
     "react-ratio": "^0.1.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.3",
+    "react-wordcloud": "^1.2.7",
     "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
