@@ -1,4 +1,6 @@
 import React from 'react' 
+import Gallery from 'react-grid-gallery';
+import Ratio from 'react-ratio';
 import ReactDOM from 'react-dom';
 import GifPlayer from 'react-gif-player';
 import MollySpriteWalk from '../assets/pixelart/mollySpriteWalk.gif'
@@ -23,35 +25,91 @@ import Player from '../assets/pixelart/playerFly.gif'
 
 
 const PixelArtContainer = () => {
+    const IMAGES =
+    [{
+        src: MollySpriteWalk,
+        thumbnail: MollySpriteWalk,
+        margin: 3
+
+        
+    },
+    {
+        src: MollyJump,
+        thumbnail: MollyJump,
+        margin: 3
+
+    },
+    {
+        src: MollyKick,
+        thumbnail: MollyKick,
+        margin: 3
+    },
+    {
+        src: MollyRun,
+        thumbnail: MollyRun,
+
+    },
+    {
+        src: MollySpin,
+        thumbnail: MollySpin,
+
+    },
+    {
+        src: MollyWalk,
+        thumbnail: MollyWalk,
+
+    },
+    {
+        src:Player,
+        thumbnail:Player,
+    },
+    {
+        src: Circle,
+        thumbnail: Circle,
+        margin: 3
+    },
+    {
+        src: Sleek,
+        thumbnail: Sleek,
+        margin: 3
+    },
+
+    {
+        src: Boss1,
+        thumbnail: Boss1,
+        margin: 3
+    },
+    {
+        src: Exp4,
+        thumbnail: Exp4,
+        margin: 3
+    },
+    {
+        src: Exp5,
+        thumbnail: Exp5,
+        margin: 3
+    },
+    {
+        src: Exp6,
+        thumbnail: Exp6,
+        margin: 3
+    }
+    ]
+
+
     return(
         <div className="pixelart-container">
         <div className="pixelart-text">
             <h1>Part of the fun of making games, is making assets. I particularly enjoy the pixel art aesthetic.</h1>
             <h1>Here's some example I've created for games I've built or in the process of building.</h1>
 
-
-        </div>
-        <div className="pixelart-images">
-        <GifPlayer className="gifplayer" gif={MollySpriteWalk} still={MollySpriteWalk} />
-        <GifPlayer className="gifplayer" gif={MollyJump} still={MollyJump} />
-        <GifPlayer className="gifplayer" gif={MollyKick} still={MollyKick} />
-        <GifPlayer className="gifplayer" gif={MollyRun} still={MollyRun} />
-        <GifPlayer className="gifplayer" gif={MollySpin} still={MollySpin} />
-        <GifPlayer className="gifplayer" gif={MollyWalk} still={MollyWalk} />
-        <GifPlayer className="gifplayer" gif={Circle} still={Circle} />
-        <GifPlayer className="gifplayer" gif={Sleek} still={Sleek} />
-        <GifPlayer className="gifplayer" gif={Exp4} still={Exp4} />
-        <GifPlayer className="gifplayer" gif={Exp5} still={Exp5} />
-        <GifPlayer className="gifplayer" gif={Exp6} still={Exp6} />
-        <GifPlayer className="gifplayer" gif={Player} still={Player} />
-        <GifPlayer className="gifplayer" gif={Boss1} still={Boss1} />
-
-
-
-
-
-
-        </div>
+            </div>
+            <Ratio ratio={16 / 9}>
+            <div className="pixelart-images">
+                <Gallery images={IMAGES} />
+            </div>
+            </Ratio>
+        
         </div>
     )
 }
