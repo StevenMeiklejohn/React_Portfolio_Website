@@ -13,7 +13,7 @@ function App() {
 
   const handleNavBar = () => {
     console.log("handleNavBar called")
-    setNavbarOpen(true)
+    setNavbarOpen(!navbarOpen)
   }
   return (
     <Router>

@@ -83,6 +83,7 @@ const NavLinks = styled(animated.ul)`
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
+    z-index:2;
 
 
     &:hover {
