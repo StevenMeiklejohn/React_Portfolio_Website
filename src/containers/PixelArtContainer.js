@@ -16,6 +16,7 @@ import MollyRun from '../assets/pixelart/mollySpriteRun.gif'
 import MollySpin from '../assets/pixelart/mollySpriteSpinKick.gif'
 import MollyWalk from '../assets/pixelart/mollySpriteWalk.gif'
 import Player from '../assets/pixelart/playerFly.gif'
+import PlayerDamaged from '../assets/pixelart/player_damaged.gif'
 
 
 
@@ -29,70 +30,100 @@ const PixelArtContainer = () => {
     [{
         src: MollySpriteWalk,
         thumbnail: MollySpriteWalk,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
 
         
     },
     {
         src: MollyJump,
         thumbnail: MollyJump,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
 
     },
     {
         src: MollyKick,
         thumbnail: MollyKick,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
     },
     {
         src: MollyRun,
         thumbnail: MollyRun,
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
 
     },
     {
         src: MollySpin,
         thumbnail: MollySpin,
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
 
     },
     {
         src: MollyWalk,
         thumbnail: MollyWalk,
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
 
     },
     {
         src:Player,
         thumbnail:Player,
+        margin: 3,
+        thumbnailWidth: 12,
+        thumbnailHeight: 10,
+    },
+    {
+        src:PlayerDamaged,
+        thumbnail:PlayerDamaged,
+        margin: 3,
+        thumbnailWidth: 12,
+        thumbnailHeight: 10,
     },
     {
         src: Circle,
         thumbnail: Circle,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 12,
+        thumbnailHeight: 10,
     },
     {
         src: Sleek,
         thumbnail: Sleek,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 12,
+        thumbnailHeight: 10,
     },
 
     {
         src: Boss1,
         thumbnail: Boss1,
-        margin: 3
-    },
-    {
-        src: Exp4,
-        thumbnail: Exp4,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
     },
     {
         src: Exp5,
         thumbnail: Exp5,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 10,
+        thumbnailHeight: 10,
     },
     {
         src: Exp6,
         thumbnail: Exp6,
-        margin: 3
+        margin: 3,
+        thumbnailWidth: 12,
+        thumbnailHeight: 10,
     }
     ]
 
