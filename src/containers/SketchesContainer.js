@@ -1,18 +1,18 @@
 import React from 'react'
 import Gallery from 'react-grid-gallery';
 import Ratio from 'react-ratio';
-import bat from '../assets/artwork/bat2.png'
-import chinese from '../assets/artwork/chinese.png'
-import close from '../assets/artwork/close_up.png'
+import bat from '../assets/artwork/bat2.jpg'
+import chinese from '../assets/artwork/chinese.jpg'
+import close from '../assets/artwork/close_up.jpg'
 import dad from '../assets/artwork/dad.png'
-import fleabag from '../assets/artwork/fleabag.png'
-import geneWilder from '../assets/artwork/geneWilder.png'
-import japanese from '../assets/artwork/japanese_lady.png'
-import jyn from '../assets/artwork/jyn3.png'
-import lookup from '../assets/artwork/lookup.png'
-import molly from '../assets/artwork/molly.png'
-import old from '../assets/artwork/old_face.png'
-import ripley from '../assets/artwork/Ripley.png'
+import molly2 from '../assets/artwork/molly_new.jpg'
+import geneWilder from '../assets/artwork/geneWilder.jpg'
+import japanese from '../assets/artwork/japanese_lady.jpg'
+import jyn from '../assets/artwork/jyn3.jpg'
+import lookup from '../assets/artwork/lookup.jpg'
+import molly from '../assets/artwork/molly.jpg'
+import old from '../assets/artwork/old_face.jpg'
+import ripley from '../assets/artwork/Ripley.jpg'
 
 
 
@@ -23,6 +23,12 @@ const SketchesConatiner = () => {
 
     const IMAGES =
         [{
+            src: molly2,
+            thumbnail: molly2,
+
+
+        },
+        {
             src: ripley,
             thumbnail: ripley,
 
@@ -55,12 +61,6 @@ const SketchesConatiner = () => {
         {
             src: geneWilder,
             thumbnail: geneWilder,
-
-        },
-        {
-            src: fleabag,
-            thumbnail: fleabag,
-
 
         },
         {

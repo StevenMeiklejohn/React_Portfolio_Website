@@ -1,9 +1,9 @@
 import React from 'react' 
-import marvel from '../assets/marvel_thumbnail.png'
-import space from "../assets/space_bastards.png"
-import blokus from "../assets/blokus.png"
-import maps from "../assets/maps.png"
-import running from "../assets/running.png"
+import marvel from '../assets/marvel_thumbnail.jpg'
+import space from "../assets/space_bastards.jpg"
+import blokus from "../assets/blokus.jpg"
+import maps from "../assets/maps.jpg"
+import running from "../assets/running.jpg"
 
 const PortFolioContainer = () => {
     return(

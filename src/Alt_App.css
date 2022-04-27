@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'WhiteRabbit';
+    src: local('WhiteRabbit'), url(./fonts/whiterabbit.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 
 @font-face {
     font-family: 'fat';
@@ -13,21 +19,6 @@
                             'embedded-opentype', and 'svg' */
 }
 
-@font-face {
-    font-family: 'montserrat';
-    src: local('montserrat'), url(./fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-}
-
-
-
-
-
-body{
-    background-color: #023047;
-    margin: 1.5em;
-}
 
 
 /* Welcome Page */
@@ -38,62 +29,156 @@ body{
 
 */
 
-  .col-main {
-    flex: 1;  
-  }  
-  
-  .col-complementary {
-    flex: 1;  
-  }
-  
-  /* Responsive: */
-  
-  @media only screen and (min-width: 640px) {
-    .layout {
-      display: flex;
-      column-gap: 10%;
-    }
-  }
-  
-  /* etc */
-  
-
-
-
-  
-  .welcome-container {
-    margin-top: 10em;
-    max-width: 90em;
-    margin-left: auto;
-    margin-right: auto;
-   }
-  
-  .col {
-    padding: 1em;
-    margin: 0 2px 2px 0;
-    background: #023047;
-  }
-
-  .welcome-image{
-  }
-
-  .welcome-text{
-    text-align: center;
-  }
-
-  .welcome-text p{
-      font-size:larger;
-      font-family: 'montserrat';
-      color: white;
-  }
-
-  .welcome-text h1{
-    font-size: xx-large;
-    font-family: 'montserrat';
-    color: white;
+.welcome{
+    flex-direction: column;
 }
 
+.welcome-text {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    display: inline-block;
+    height: 55%;
+    width: 40%;
+    font-size: 0.6em;
+    font-family: 'spectrum';
+    overflow: scroll;
+    /* margin-left: 20%;
+  margin-top:15%; */
+    color: white;
+    text-align: center;
+}
 
+@media (max-width: 1000px) {
+    .welcome-text {
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        font-size: 0.4em;
+        overflow: scroll;
+    }
+    .welcome-image {
+        display: inline;
+        margin-top: 7%;
+        margin-right: -5%;
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcome-text {
+        display: inline;
+        width: 80%;
+        height: 45%;
+        top: 15%;
+        font-size: 0.9em;
+        margin-left: 5%;
+        overflow:visible;
+    }
+    .welcome-image {
+        display: inline;
+        top: 250%;
+        left: 30%;
+        height: 60%;
+  
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        display: inline;
+        width: 80%;
+        height: 45%;
+        top: 15%;
+        font-size: 0.7em;
+        margin-left: 5%;
+        overflow:visible;
+    }
+    .welcome-image {
+        display: inline;
+        top: 200%;
+        left: 30%;
+        height: 60%;
+  
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome-text {
+        display: inline;
+        width: 80%;
+        height: 45%;
+        top: 15%;
+        font-size: 0.6em;
+        margin-left: 5%;
+        overflow:visible;
+    }
+    .welcome-image {
+        display: inline;
+        top: 260%;
+        left: 30%;
+        height: 60%;
+  
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+        display: inline;
+        width: 80%;
+        height: 45%;
+        top: 12%;
+        font-size: 0.5em;
+        margin-left: 5%;
+        overflow:visible;
+    }
+    .welcome-image {
+        display: inline;
+        top: 260%;
+        left: 30%;
+        height: 60%;
+  
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome-text {
+        display: inline;
+        width: 80%;
+        height: 45%;
+        top: 20%;
+        font-size: 0.35em;
+        margin-left: 5%;
+        overflow:visible;
+    }
+    .welcome-image {
+        display: inline;
+        top: 50%;
+        left: 30%;
+    }
+}
+
+.welcome-image {
+    position: absolute;
+
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    /* height: 45%;
+    width: 25%; */
+    font-size: 0.6em;
+    overflow: auto;
+    /* margin-left: 20%;
+  margin-top:15%; */
+    color: white;
+    text-align: center;
+    overflow:hidden;
+}
+
+.welcome-image img {
+    max-width: 110%;
+    max-height: 110%;
+}
 
 
 /* Welcome page end */
@@ -429,18 +514,4 @@ body{
         width: 72%;
         height: 200%;
     }
-}
-
-.navbar-light .navbar-nav .nav-link {
-    font-family: "montserrat";
-    font-size:x-large;
-    color: white;
-  }
-
-.color-nav{
-    background-color: #023047;
-}
-
-#collapsed{
-    float: right;
 }
