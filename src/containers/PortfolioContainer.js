@@ -7,63 +7,103 @@ import running from "../assets/running.jpg"
 
 const PortFolioContainer = () => {
     return(
-        <>
-        <div className="portfolio-text">
-        <h1>Some of the projects I have built for fun, in order to learn a new technology or for charity.</h1>
-        <h1>Click the screen grab to check them out..</h1>
+        <div class="portfolio-container">
+  
+            <div class="layout">
+                <div class="col portfolio-col-main">
+                 <div className="portfolio-text">
+                 <p>Some of the projects I have built for fun, in order to learn a new technology or for charity.</p>
+                 <p>Click the screen grab to check them out..</p>
+                 </div>
 
-        </div>
-        <div className="portfolio-display">
-        <div className="portfolio-element">
-            <a href="http://marvelrecommender.com/">
-            <img src={marvel} />
-            </a>
-            <h1 className="underlined">Marvel Recommender.</h1>
-            <h1 className="noselect">Webapp which allows Marvel comics fans to recommend series, story arcs, creators or issues to each other.</h1>
-            <h1 className="noselect">Front end: React</h1>
-            <h1 className="noselect">Back end: Spring/Docker</h1>
-            
-        </div>
-        <div className="portfolio-element">
-            <a href="https://simmer.io/@SteveMJohn/spacebastardsprototype">
-            <img src={space} />
-            </a>
-            <h1 className="underlined">Space Bastards.</h1>
-            <h1>Scrolling 'shmup' a la R-type.</h1>
-            <h1>Built in Unity</h1>
-            <h1>Pixel art sprites, animations and assets.</h1>
-     
-        </div>
-        <div className="portfolio-element">
-            <a href="https://github.com/StevenMeiklejohn/Blokus/tree/master">
-            <img src={blokus} />
-            </a>
-            <h1 className="underlined">Blokus.</h1>
-            <h1>Web app version of the board game.</h1>
-            <h1>Built using vanilla JS</h1>
-            
-        </div>
-        <div className="portfolio-element">
-            <a href="https://github.com/StevenMeiklejohn/React_Travel_Cost_Calculator">
-            <img src={maps} />
-            </a>
-            <h1 className="underlined">Travel Cost Calculator.</h1>
-            <h1>Webapp which displays routes between postcodes and calculates incurred travel costs.</h1>
-            <h1>Built Using React.</h1>
+                <br></br>
+                </div>
+                <div className="portfolio-wrapper">
+                <div className="col portfolio-col-complementary" role="complementary">
+                <div className="portfolio-element">
+                    <a href="http://marvelrecommender.com/">
+                    <img className="portfolio-element-image" src={marvel} />
+                    </a>
+                    <br></br>
+                    <br></br>
+                    <div className="portfolio-text">
+                    <p className='portfolio-element-title'>Marvel Recommender.</p>
+                    <p>Webapp which allows Marvel comics fans to recommend series, story arcs, creators or issues to each other.</p>
+                    <p>Front end: React</p>
+                    <p>Back end: Spring/Docker</p>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+                <div className="portfolio-element">
+                    <a href="https://simmer.io/@SteveMJohn/spacebastardsprototype">
+                    <img className="portfolio-element-image" src={space} />
+                    </a>
+                    <br></br>
+                    <br></br>
+                    <div className="portfolio-text">
+                    <p className="portfolio-element-title">Space Bastards</p>
+                    <p>Scrolling 'shmup' a la R-type.</p>
+                    <p>Built in Unity</p>
+                    <p>Pixel art sprites, animations and assets.</p>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
 
-        </div>
-        <div className="portfolio-element">
-            <a href="http://couch25gays.com/">
-            <img src={running} />
-            </a>
-            <h1 className="underlined">Run Tracker.</h1>
-            <h1>Running tracker / motivational tool.</h1>
-            <h1>Allows a group to compare runs and collectively build towards a goal..</h1>
+                <div className="portfolio-element">
+                    <a href="https://github.com/StevenMeiklejohn/Blokus/tree/master">
+                    <img className="portfolio-element-image" src={blokus} />
+                    </a>
+                    <br></br>
+                    <br></br>
+                    <div className="portfolio-text">
+                    <p className="portfolio-element-title">Blokus</p>
+                    <p>Web app version of the board game.</p>
+                    <p>Built using vanilla JS</p>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
 
-        </div>
-        </div>
-        </>
+                <div className="portfolio-element">
+                    <a href="https://github.com/StevenMeiklejohn/React_Travel_Cost_Calculator">
+                    <img className="portfolio-element-image" src={maps} />
+                    </a>
+                    <br></br>
+                    <br></br>
+                    <div className="portfolio-text">
+                    <p className="portfolio-element-title">Travel Cost Calculator</p>
+                    <p>Webapp which displays routes between postcodes and calculates incurred travel costs.</p>
+                    <p>Built Using React.</p>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+
+                <div className="portfolio-element">
+                    <a href="http://couch25gays.com/">
+                    <img className="portfolio-element-image" src={running} />
+                    </a>
+                    <br></br>
+                    <br></br>
+                    <div className="portfolio-text">
+                    <p className="portfolio-element-title">Run Tracker</p>
+                    <p>Running tracker / motivational tool.</p>
+                    <p>Allows a group to compare runs and collectively build towards a goal..</p>
+                    </div>
+                </div>
+                <br></br>
+                <br></br>
+
+
+                </div>
+                </div>
+            </div>   
+            </div>
+
     )
 }
 
 export default PortFolioContainer
+
