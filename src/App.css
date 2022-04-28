@@ -187,7 +187,90 @@ body{
 
 */
 
-.experience-text {
+.experience-col-main {
+    flex: 1;  
+  }  
+  
+  .experience-col-complementary {
+    flex: 2;  
+    background-color: white;
+  }
+
+  .experience-wrapper{
+    flex: 1;
+    height: 30em;
+    overflow: auto;
+    min-height: 0px;
+    border: 5px solid white;
+  }
+  
+  
+  @media only screen and (min-width: 640px) {
+    .layout {
+      display: flex;
+      column-gap: 10%;
+    }
+  }
+  
+  .experience-container {
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+  
+  .experience-col {
+    padding: 1em;
+    margin: 0 2px 2px 0;
+    background: #023047;
+  }
+
+
+  .experience-text{
+    text-align: center;
+  }
+
+  .experience-text p{
+      font-size:larger;
+      font-family: 'montserrat';
+      color: white;
+  }
+
+  .experience-text h1{
+    font-size: xx-large;
+    font-family: 'montserrat';
+    color: white;
+}
+
+  .experience-element{
+      width: 50%;
+      display: inline-block;
+  }
+
+  .experience-element2{
+    width: 50%;
+    display: inline-block;
+
+
+}
+
+  .experience-element-title{
+      text-decoration: underline;
+  }
+
+  .experience-element-image{
+      width: 90%;
+  }
+
+  .experience-element-text{
+
+    font-size:larger;
+    font-family: 'montserrat';
+    color: black;
+    text-align: center;
+}
+
+/* .experience-text {
     position: absolute;
     left: 5%;
     top: 25%;
@@ -245,7 +328,7 @@ body{
         width: 85%;
         height: 150%;
     }
-}
+} */
 
 /* 
 

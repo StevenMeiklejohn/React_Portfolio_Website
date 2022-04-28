@@ -24,135 +24,132 @@ const ExperienceConatiner = () => {
 
 
 
-    const IMAGES =
-        [{
-            src: hibernate,
-            thumbnail: hibernate,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "hibernate", title: "hibernate" }],
-            caption: "hibernate"
-        },
-        {
-            src: ic,
-            thumbnail: ic,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "ic design", title: "ic design" }],
-            caption: "ic design"
-        },
-        {
-            src: java,
-            thumbnail: java,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "java", title: "java" }],
-            caption: "java"
-        },
-        {
-            src: js,
-            thumbnail: js,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "js", title: "js" }],
-            caption: "js"
-        },
-        {
-            src: mongodb,
-            thumbnail: mongodb,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "mongodb", title: "mongodb" }],
-            caption: "mongodb"
-        },
-        {
-            src: python,
-            thumbnail: python,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "python", title: "python" }],
-            caption: "python"
-        },
-        {
-            src: react,
-            thumbnail: react,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "react", title: "react" }],
-            caption: "react"
-        },
-        {
-            src: ruby,
-            thumbnail: ruby,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "ruby", title: "ruby" }],
-            caption: "ruby"
-        },
-        {
-            src: spring,
-            thumbnail: spring,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "spring", title: "spring" }],
-            caption: "spring"
-        },
-        {
-            src: sql,
-            thumbnail: sql,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "sql", title: "sql" }],
-            caption: "sql"
-        },
-        {
-            src: unity,
-            thumbnail: unity,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "unity", title: "unity" }],
-            caption: "unity"
-        },
-        {
-            src: vue,
-            thumbnail: vue,
-            thumbnailWidth: 10,
-            thumbnailHeight: 10,
-            tags: [{ value: "vue", title: "vue" }],
-            caption: "vue"
-        },
-        {
-            src: teaching,
-            thumbnail: teaching,
-            thumbnailWidth: 12,
-            thumbnailHeight: 10,
-            tags: [{ value: "Teaching", title: "Teaching" }],
-            caption: "Teaching"
-        },
-        {
-            src: course,
-            thumbnail: course,
-            thumbnailWidth: 12,
-            thumbnailHeight: 10,
-            tags: [{ value: "Course Development", title: "Course Development" }],
-            caption: "Course Development"
-        }
-        ]
-
 
     return (
-        <div className="experience-container">
-            <div className="experience-text">
-                <h1>Having spent the early part of my career designing the layout of laptop PCBs and Integrated circuits, around 5 years ago I switched careers into software engineering.</h1>
-                <h1>I am currently the senior instructor in Codeclan Glasgow where I manage the instructor team, deliver the 16 week immersive software development course and work on course development.</h1>
+        <div class="experience-container">
+  
+        <div class="layout">
+            <div class="col experience-col-main">
+             <div className="experience-text">
+             <p>Having spent the early part of my career designing the layout of laptop PCBs and Integrated circuits, in 2017 I switched careers into software engineering.</p>
+             <p>I subsequently spent the next five years working as a senior instructor in Codeclan Glasgow where I also managed the instructor team, delivered the 16 week immersive software development course and worked on course development.</p>
+             <p>I currently work as a Software Engineer for FanDuel.</p>
+             </div>
+
+            <br></br>
             </div>
-            <Ratio ratio={16 / 9}>
-            <div className="experience-images">
-                <Gallery images={IMAGES} />
+            <div className="experience-wrapper">
+            <div className="col experience-col-complementary" role="complementary">
+            <div className="experience-element">
+                <img className="experience-element-image" src={hibernate} />
+                <div className="experience-element-text">
+                <p>Hibernate</p>
+                </div>
             </div>
-            </Ratio>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={java} />
+                <div className="experience-element-text">
+                <p>Java</p>
+                </div>
+            </div>
+            <div className="experience-element">
+                <img className="experience-element-image" src={js} />
+                <div className="experience-element-text">
+                <p>Javascript</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={react} />
+                <div className="experience-element-text">
+                <p>React</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={mongodb} />
+                <div className="experience-element-text">
+                <p>MongoDB</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={python} />
+                <div className="experience-element-text">
+                <p>Python</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={ruby} />
+                <div className="experience-element-text">
+                <p>Ruby</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={spring} />
+                <div className="experience-element-text">
+                <p>Spring</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={sql} />
+                <div className="experience-element-text">
+                <p>SQL</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={unity} />
+                <div className="experience-element-text">
+                <p>Unity</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={vue} />
+                <div className="experience-element-text">
+                <p>Vue</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={ic} />
+                <div className="experience-element-text">
+                <p>IC Design</p>
+                </div>
+            </div>
+
+
+            <br></br>
+            <br></br>
+
+
+ 
+
+
+            </div>
+            </div>
+        </div>   
         </div>
+
     )
 }
 
 export default ExperienceConatiner
+
+
+{/* <div className="experience-container">
+<div className="experience-text">
+    <h1>Having spent the early part of my career designing the layout of laptop PCBs and Integrated circuits, around 5 years ago I switched careers into software engineering.</h1>
+    <h1>I am currently the senior instructor in Codeclan Glasgow where I manage the instructor team, deliver the 16 week immersive software development course and work on course development.</h1>
+</div>
+<Ratio ratio={16 / 9}>
+<div className="experience-images">
+    <Gallery images={IMAGES} />
+</div>
+</Ratio>
+</div> */}
