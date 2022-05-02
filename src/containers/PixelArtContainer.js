@@ -73,38 +73,27 @@ const PixelArtContainer = () => {
             </div>
 
             <div className="experience-element2">
-                <img className="experience-element-image" src={""} />
-                <div className="experience-element-text">
-                <p>Spring</p>
-                </div>
+                <img className="experience-element-image" src={Boss1} />
             </div>
 
             <div className="experience-element">
-                <img className="experience-element-image" src={""} />
-                <div className="experience-element-text">
-                <p>SQL</p>
-                </div>
+                <img className="experience-element-image" src={Circle} />
             </div>
 
             <div className="experience-element2">
-                <img className="experience-element-image" src={""} />
-                <div className="experience-element-text">
-                <p>Unity</p>
-                </div>
+                <img className="experience-element-image" src={Sleek} />
             </div>
 
             <div className="experience-element">
-                <img className="experience-element-image" src={""} />
-                <div className="experience-element-text">
-                <p>Vue</p>
-                </div>
+                <img className="experience-element-image" src={Exp4} />
             </div>
 
             <div className="experience-element2">
-                <img className="experience-element-image" src={""} />
-                <div className="experience-element-text">
-                <p>IC Design</p>
-                </div>
+                <img className="experience-element-image" src={Exp5} />
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={Exp6} />
             </div>
 
 
