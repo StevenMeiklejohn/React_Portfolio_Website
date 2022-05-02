@@ -26,123 +26,117 @@ import PlayerDamaged from '../assets/pixelart/player_damaged.gif'
 
 
 const PixelArtContainer = () => {
-    const IMAGES =
-    [{
-        src: MollySpriteWalk,
-        thumbnail: MollySpriteWalk,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
 
-        
-    },
-    {
-        src: MollyJump,
-        thumbnail: MollyJump,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-
-    },
-    {
-        src: MollyKick,
-        thumbnail: MollyKick,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-    },
-    {
-        src: MollyRun,
-        thumbnail: MollyRun,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-
-    },
-    {
-        src: MollySpin,
-        thumbnail: MollySpin,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-
-    },
-    {
-        src: MollyWalk,
-        thumbnail: MollyWalk,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-
-    },
-    {
-        src:Player,
-        thumbnail:Player,
-        margin: 3,
-        thumbnailWidth: 12,
-        thumbnailHeight: 10,
-    },
-    {
-        src:PlayerDamaged,
-        thumbnail:PlayerDamaged,
-        margin: 3,
-        thumbnailWidth: 12,
-        thumbnailHeight: 10,
-    },
-    {
-        src: Circle,
-        thumbnail: Circle,
-        margin: 3,
-        thumbnailWidth: 12,
-        thumbnailHeight: 10,
-    },
-    {
-        src: Sleek,
-        thumbnail: Sleek,
-        margin: 3,
-        thumbnailWidth: 12,
-        thumbnailHeight: 10,
-    },
-
-    {
-        src: Boss1,
-        thumbnail: Boss1,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-    },
-    {
-        src: Exp5,
-        thumbnail: Exp5,
-        margin: 3,
-        thumbnailWidth: 10,
-        thumbnailHeight: 10,
-    },
-    {
-        src: Exp6,
-        thumbnail: Exp6,
-        margin: 3,
-        thumbnailWidth: 12,
-        thumbnailHeight: 10,
-    }
-    ]
 
 
     return(
-        <div className="pixelart-container">
-        <div className="pixelart-text">
-            <h1>Part of the fun of making games, is making assets. I particularly enjoy the pixel art aesthetic.</h1>
-            <h1>Here's some example I've created for games I've built or in the process of building.</h1>
+        <div class="experience-container">
+  
+        <div class="layout">
+            <div class="col experience-col-main">
+             <div className="experience-text">
+             <p>Part of the fun of making games, is making assets. I particularly enjoy the pixel art aesthetic.</p>
+             <p>Here's some example I've created for my own games</p>
+             </div>
+
+            <br></br>
+            </div>
+            <div className="experience-wrapper">
+            <div className="col experience-col-complementary" role="complementary">
+            <div className="experience-element">
+                <img className="experience-element-image" src={MollySpriteWalk} />
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={MollyRun} />
+            </div>
+            <div className="experience-element">
+                <img className="experience-element-image" src={MollyKick} />
 
             </div>
-            <Ratio ratio={16 / 9}>
-            <div className="pixelart-images">
-                <Gallery images={IMAGES} />
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={MollySpin} />
             </div>
-            </Ratio>
-        
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={MollyWalk} />
+
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={Player} />
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={PlayerDamaged} />
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={""} />
+                <div className="experience-element-text">
+                <p>Spring</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={""} />
+                <div className="experience-element-text">
+                <p>SQL</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={""} />
+                <div className="experience-element-text">
+                <p>Unity</p>
+                </div>
+            </div>
+
+            <div className="experience-element">
+                <img className="experience-element-image" src={""} />
+                <div className="experience-element-text">
+                <p>Vue</p>
+                </div>
+            </div>
+
+            <div className="experience-element2">
+                <img className="experience-element-image" src={""} />
+                <div className="experience-element-text">
+                <p>IC Design</p>
+                </div>
+            </div>
+
+
+            <br></br>
+            <br></br>
+
+
+ 
+
+
+            </div>
+            </div>
+        </div>   
         </div>
+
     )
 }
 
 export default PixelArtContainer
+
+
+
+{/* <div className="pixelart-container">
+<div className="pixelart-text">
+    <h1>Part of the fun of making games, is making assets. I particularly enjoy the pixel art aesthetic.</h1>
+    <h1>Here's some example I've created for my own games</h1>
+
+    </div>
+    <Ratio ratio={16 / 9}>
+    <div className="pixelart-images">
+        <Gallery images={IMAGES} />
+    </div>
+    </Ratio>
+
+</div> */}
